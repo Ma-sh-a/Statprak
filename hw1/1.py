@@ -1,4 +1,4 @@
-# tuple  containing natural numbers, the square of which is a multiple of 3, 4, but not a multiple of 8 and not exceeding 12345.
-num_tuple = (12,24,36,60,84)
- 
+#make tuple
+num_tuple = tuple(x for x in range(int(12345**0.5)+1) if x**2 % 3 == 0 and x**2 % 4 == 0 and x**2 % 8 != 0 and x**2 < 12345)
+
 print(num_tuple)
